@@ -45,8 +45,7 @@ The Smart Energy Meter measures AC voltage and current using the ZMPT101B and AC
     - **Noise Filtering**: Currents below 0.3A or above 20A are set to 0.
 
 ### Block Diagram
-
-![[BD_Smart_Energy_Meter.jpg]]
+![Block Diagram](./BD_Smart_Energy_Meter.jpg)
 - **AC Load**: Connected through the relay for control.
 - **Relay**: Controlled by ESP32 to toggle the load.
 - **ZMPT101B and ACS712**: Measure voltage and current, sending analog signals to ESP32.
@@ -55,7 +54,7 @@ The Smart Energy Meter measures AC voltage and current using the ZMPT101B and AC
 
 ### Circuit Diagram
 
-![[./BB_Smart_Energy_Meter.png]]
+![Wiring Diagram](./BB_Smart_Energy_Meter.png)
 
 **Note**: Ensure proper insulation and safety precautions when working with AC circuits. Use a suitable power supply for the ESP32 and verify all connections before powering on.
 
