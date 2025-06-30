@@ -44,13 +44,16 @@ The Smart Energy Meter measures AC voltage and current using the ZMPT101B and AC
     - **Calibration**: Zero point set to 2943, sensitivity set to 0.4.
     - **Noise Filtering**: Currents below 0.3A or above 20A are set to 0.
 
+
 ### Block Diagram
+
 ![Block Diagram](./BD_Smart_Energy_Meter.jpg)
 - **AC Load**: Connected through the relay for control.
 - **Relay**: Controlled by ESP32 to toggle the load.
 - **ZMPT101B and ACS712**: Measure voltage and current, sending analog signals to ESP32.
 - **ESP32**: Processes sensor data and controls the OLED display and relay.
 - **SSD1306 OLED**: Displays real-time data.
+
 
 ### Circuit Diagram
 
